@@ -1,9 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",                     /* so "@/…" maps to "<projectRoot>/src/…" */
-    "paths": {
-      "@/*": ["./src/*"]
-    },
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -17,6 +13,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",                       // Enables path aliases
+    "paths": {
+      "@/*": ["./src/*"]                 // Use @/components/Navbar etc.
+    },
     "plugins": [
       {
         "name": "next"
