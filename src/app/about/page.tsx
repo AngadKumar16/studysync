@@ -1,7 +1,8 @@
 "use client";
 
-import { Box, Heading, Text, SimpleGrid} from "@chakra-ui/react";
+import { Box, Heading, Text, SimpleGrid, Link as ChakraLink } from "@chakra-ui/react";
 import Timeline from "@/components/Timeline";
+import Link from "next/link";
 
 export default function AboutPage() {
   const timelineSteps = [
@@ -20,16 +21,35 @@ export default function AboutPage() {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} mb={10}>
         <Box bg="gray.100" _dark={{ bg: "gray.700" }} p={6} rounded="md">
           <Text fontWeight="bold" fontSize="xl">Angad Kumar</Text>
-          <Text fontSize="sm" color="gray.600">Developer, Co-founder</Text>
+          <Text fontSize="sm" color="gray.600">Developer, Designer, Vision Architect</Text>
         </Box>
         <Box bg="gray.100" _dark={{ bg: "gray.700" }} p={6} rounded="md">
           <Text fontWeight="bold" fontSize="xl">Ravjeer Singh</Text>
-          <Text fontSize="sm" color="gray.600">Technical Advisor, Co-founder</Text>
+          <Text fontSize="sm" color="gray.600">Technical Advisor, UI Reviewer</Text>
         </Box>
       </SimpleGrid>
 
+      <Heading size="lg" mb={4}>Explore More</Heading>
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6} mb={10}>
+        <ChakraLink as={Link} href="/about/team" color="blue.500" fontWeight="semibold" _hover={{ textDecoration: "underline" }}>
+          Team Details
+        </ChakraLink>
+        <ChakraLink as={Link} href="/about/mission" color="blue.500" fontWeight="semibold" _hover={{ textDecoration: "underline" }}>
+          Mission & Vision
+        </ChakraLink>
+        <ChakraLink as={Link} href="/about/tech-stack" color="blue.500" fontWeight="semibold" _hover={{ textDecoration: "underline" }}>
+          Tech Stack
+        </ChakraLink>
+        <ChakraLink as={Link} href="/about/faq" color="blue.500" fontWeight="semibold" _hover={{ textDecoration: "underline" }}>
+          FAQs
+        </ChakraLink>
+        <ChakraLink as={Link} href="/about/contact" color="blue.500" fontWeight="semibold" _hover={{ textDecoration: "underline" }}>
+          Contact
+        </ChakraLink>
+      </SimpleGrid>
+
       <Heading size="lg" mb={4}>Timeline</Heading>
-      <Timeline steps={timelineSteps} /> 
+      <Timeline steps={timelineSteps} />
     </Box>
   );
 }
