@@ -20,11 +20,11 @@ export default function AboutPage() {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} mb={10}>
         <Box bg="gray.100" _dark={{ bg: "gray.700" }} p={6} rounded="md">
           <Text fontWeight="bold" fontSize="xl">Angad Kumar</Text>
-          <Text fontSize="sm" color="gray.600">Developer, Designer, Vision Architect</Text>
+          <Text fontSize="sm" color="gray.600">Developer, Co-founder</Text>
         </Box>
         <Box bg="gray.100" _dark={{ bg: "gray.700" }} p={6} rounded="md">
           <Text fontWeight="bold" fontSize="xl">Ravjeer Singh</Text>
-          <Text fontSize="sm" color="gray.600">Technical Advisor, UI Reviewer</Text>
+          <Text fontSize="sm" color="gray.600">Technical Advisor, Co-founder</Text>
         </Box>
       </SimpleGrid>
 
