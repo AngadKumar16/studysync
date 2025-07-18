@@ -14,7 +14,8 @@ export default function AboutPage() {
     <Box px={6} py={10} maxW="6xl" mx="auto">
       <Heading size="2xl" mb={4}>About StudySync</Heading>
       <Text fontSize="lg" color="gray.700" mb={8}>
-        StudySync was built to support students facing burnout and mental fatigue. Our goal is to create a collaborative and mindful space for academic growth.
+        At StudySync, we believe academic success should never come at the expense of your mental health. Our platform combines mindful study tools with a collaborative digital space designed to empower students to learn more effectively while prioritizing mental well-being. We aim to help you rediscover your love for learning and make the academic journey less stressful and more fulfilling.
+
       </Text>
 
       <Heading size="lg" mb={4}>Creators</Heading>
