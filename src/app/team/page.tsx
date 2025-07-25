@@ -17,7 +17,7 @@ export default function TeamPage() {
         <Box bg="gray.100" _dark={{ bg: "gray.700" }} p={6} rounded="md">
           <Heading size="lg" mb={2}>Ravjeer Singh</Heading>
           <Text mb={2}>
-            Technical Advisor and UI Reviewer. Focuses on creating seamless and accessible user experiences.
+            Founder, Technical Advisor and UI Reviewer. Focuses on creating seamless and accessible user experiences.
           </Text>
           <Text fontSize="sm" color="gray.600">Interests: UX design, accessibility, frontend architecture</Text>
         </Box>
